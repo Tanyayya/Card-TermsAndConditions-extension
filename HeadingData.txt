@@ -1,0 +1,16 @@
+
+  
+  
+  1. Setting Up a TypeScript Express Project
+
+  
+  
+  2. Building an Express API with TypeScript
+
+  
+  
+  3. Creating a Simple CRUD API
+
+  
+  
+  Conclusion

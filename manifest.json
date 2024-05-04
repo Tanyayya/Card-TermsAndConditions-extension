@@ -1,0 +1,35 @@
+{
+    "name": "Card tnc Details",
+    "version": "0.1.0",
+    "description": "scrap all credit card benefits & terms on Chase, American Express, Capital One and Citi",
+    "permissions": ["storage", "tabs"],
+    "host_permissions": ["https://*.americanexpress.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.americanexpress.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          
+        ],
+        "matches": ["https://*.americanexpress.com/*"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/icon.png",
+        "24": "assets/icon.png",
+        "32": "assets/icon.png"
+      },
+      "default_title": "Card Tnc",
+      "default_popup":"popup.html"
+    },
+    "manifest_version": 3
+}
+
